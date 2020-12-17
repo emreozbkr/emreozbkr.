@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HELLO! :)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="shuttle.png">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <a class="linkk" href="https://emreozbkr.github.io/emree/css-kodlar%C4%B1m-1/"><h2 class="object" data-value="3">ClickHere <br><span>or the icons</span></h2>
+    </a>
+    <a href="https://emreozbkr.github.io/emree/css-kodlar%C4%B1m-1/"><img class="object" src="1.png" data-value="-2" alt=""></a>
+    <a href="https://emreozbkr.github.io/emree/css-kodlar%C4%B1m-1/"><img class="object" src="2.png" data-value="6" alt=""></a>
+    <a href="https://emreozbkr.github.io/emree/css-kodlar%C4%B1m-1/"><img class="object" src="3.png" data-value="4" alt=""></a>
+    <a href="https://emreozbkr.github.io/emree/css-kodlar%C4%B1m-1/"><img class="object" src="4.png" data-value="-6" alt=""></a>
+    <a href="https://emreozbkr.github.io/emree/css-kodlar%C4%B1m-1/"><img class="object" src="5.png" data-value="8" alt=""></a>
+    <a href="https://emreozbkr.github.io/emree/css-kodlar%C4%B1m-1/"><img class="object" src="6.png" data-value="-4" alt=""></a>
+    <a href="https://emreozbkr.github.io/emree/css-kodlar%C4%B1m-1/"><img class="object" src="7.png" data-value="5" alt=""></a>
+    <a href="https://emreozbkr.github.io/emree/css-kodlar%C4%B1m-1/"><img class="object" src="8.png" data-value="-9" alt=""></a>
+    <a href="https://emreozbkr.github.io/emree/css-kodlar%C4%B1m-1/"><img class="object" src="9.png" data-value="-5" alt=""></a>
+  </div>
+
+  <script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+
+    function parallax(e) {
+      document.querySelectorAll(".object").forEach(function(move) {
+            var moving_value = move.getAttribute("data-value");
+            var x = (e.clientX * moving_value) / 250;
+            var y = (e.clientY * moving_value) / 250;
+
+   move.style.transform = "translateX(" + x +"px) translateY(" + y +"px)";
+
+ });
+  }
+</script>
+
+
+
+</body>
+</html>
